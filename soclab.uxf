@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>40</x>
+      <y>40</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Bajnokság
+--
+- ID (pk)
+- NEV
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
