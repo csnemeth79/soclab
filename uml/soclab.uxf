@@ -4,15 +4,17 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>40</x>
-      <y>40</y>
+      <x>30</x>
+      <y>30</y>
       <w>140</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>Bajnokság
+    <panel_attributes>bajnoksag
 --
-- ID (pk)
-- NEV
+- id_bajnoksag (pk)
+- nev
+
+halign=left
 bg=gray
 fg=red</panel_attributes>
     <additional_attributes/>
@@ -20,17 +22,101 @@ fg=red</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>370</x>
-      <y>50</y>
+      <x>360</x>
+      <y>40</y>
       <w>140</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>User
+    <panel_attributes>user
 --
-- ID
-- Nev
+- id_user (pk)
+- nev
+
+halign=left
 bg=gray
 fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>180</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>bajnoksag_detail
+--
+- id_bajnoksag (fk)
+
+halign=left
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>280</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>meccs
+--
+- id_meccs (pk)
+
+
+halign=left
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>380</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>fogadas
+--
+- id_fogadas (pk)
+- id_meccs (fk)
+- id_user (fk)
+
+halign=left
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>340</x>
+      <y>190</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>meccs_sema
+--
+- id_meccs_sema
+
+halign=left
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>570</x>
+      <y>50</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>jog</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
